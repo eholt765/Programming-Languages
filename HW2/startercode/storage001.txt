@@ -1,0 +1,135 @@
+	if(move == 'l'){
+  		while((col > 0) && newDirectionAvailable == 0) {
+			if ((maze[row][col-1] == "-") && (primeMark == 0)){
+				col--;
+				primeMark = 1;
+
+			}
+
+      			if ((maze[row][col-1] == "-") && ((maze[row+1][col] != "-") && (maze[row-1][col] != "-"))){
+    				col--;
+          		}
+
+          		else if ((maze[row][col-1] == "-") && ((maze[row+1][col] == "-") || (maze[row-1][col] == "-"))){
+          			newDirectionAvailable = 1;
+          		}
+          		else if ((maze[row][col-1] != "-") && (maze[row+1][col] == "-") && (maze[row-1][col] != "-")){
+          			row++;
+    			}
+         	 	else if ((maze[row][col-1] != "-") && (maze[row+1][col] != "-") && (maze[row-1][col] == "-")){
+          			row--;
+    			}
+			else {
+				newDirectionAvailable = 1;
+			}
+
+        	}
+    		if (col != oldCol){
+    			maze[row][col] = player;
+    			maze[oldRow][oldCol] = '-';  
+    		}
+  	}
+
+	if(move == 'r'){
+  		while((col < maze[0].length) && newDirectionAvailable == 0) {
+			if ((maze[row][col+1] == "-") && (primeMark == 0)){
+				col++;
+				primeMark = 1;
+			}
+
+			if ((maze[row][col+1] != "-") && (primeMark == 0)){
+				break;
+			}
+      			if ((maze[row][col+1] == "-") && ((maze[row+1][col] != "-") && (maze[row-1][col] != "-"))){
+    				col++;
+          		}
+
+          		else if ((maze[row][col+1] == "-") && ((maze[row+1][col] == "-") || (maze[row-1][col] == "-"))){
+          			newDirectionAvailable = 1;
+          		}
+          		else if ((maze[row][col+1] != "-") && (maze[row+1][col] == "-") && (maze[row-1][col] != "-")){
+          			row++;
+    			}
+         	 	else if ((maze[row][col+1] != "-") && (maze[row+1][col] != "-") && (maze[row-1][col] == "-")){
+          			row--;
+    			}
+			else {
+				newDirectionAvailable = 1;
+			}
+        	}
+    		if (col != oldCol){
+    			maze[row][col] = player;
+    			maze[oldRow][oldCol] = '-';  
+    		}
+  	}
+
+	if(move == 'u'){
+  		while((row > 0) && newDirectionAvailable == 0) {
+			if ((maze[row-1][col] == "-") && (primeMark == 0)){
+				row--;
+				primeMark = 1;
+			}
+			
+			if ((maze[row-1][col] != "-") && (primeMark == 0)){
+				break;
+			}
+
+      			if ((maze[row-1][col] == "-") && ((maze[row][col+1] != "-") && (maze[row][col-1] != "-"))){
+    				row--;
+          		}
+	
+          		else if ((maze[row-1][col] == "-") && ((maze[row][col+1] == "-") || (maze[row][col+1] == "-"))){
+          			newDirectionAvailable = 1;
+          		}
+          		else if ((maze[row-1][col] != "-") && (maze[row][col+1] == "-") && (maze[row][col-1] != "-")){
+          			col++;
+    			}
+         	 	else if ((maze[row-1][col] != "-") && (maze[row][col+1] != "-") && (maze[row][col-1] == "-")){
+          			col--;
+    			}
+			else {
+				newDirectionAvailable = 1;
+			}
+        	}
+    		if (row != oldRow){
+    			maze[row][col] = player;
+    			maze[oldRow][oldCol] = '-';  
+    		}
+  	}
+
+	if(move == 'd'){
+  		while((row < maze[0].length) && newDirectionAvailable == 0) {
+			if ((maze[row+1][col] == "-") && (primeMark == 0)){
+				row++;
+				primeMark = 1;
+			}
+	
+			if ((maze[row+1][col] != "-") && (primeMark == 0)){
+				break;
+			}
+      			if ((maze[row+1][col] == "-") && ((maze[row][col+1] != "-") && (maze[row][col-1] != "-"))){
+    				row++;
+          		}
+	
+          		else if ((maze[row+1][col] == "-") && ((maze[row][col+1] == "-") || (maze[row][col+1] == "-"))){
+          			newDirectionAvailable = 1;
+          		}
+          		else if ((maze[row+1][col] != "-") && (maze[row][col+1] == "-") && (maze[row][col-1] != "-")){
+          			col++;
+    			}
+         	 	else if ((maze[row+1][col] != "-") && (maze[row][col+1] != "-") && (maze[row][col-1] == "-")){
+          			col--;
+    			}
+			else {
+				newDirectionAvailable = 1;
+			}
+        	}
+    		if (row != oldRow){
+    			maze[row][col] = player;
+    			maze[oldRow][oldCol] = '-';  
+    		}
+  	}
+
+	return maze;
+  }
+

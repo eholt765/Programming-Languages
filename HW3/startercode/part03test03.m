@@ -1,0 +1,17 @@
+(
+[
+"xx-xxxxxxxxxxxx",
+"x--x-xxxxxxxx-x",
+"xx-x-x-xx-x-x-x",
+"x--x-x-xx-x---x",
+"xx-x-x----x-x-x",
+"xx-x-x-xx-x-x-x",
+"xx---x-xx-x-x-x",
+"x--x---xx---x-x",
+"x-xx-x1xx-x-x-x",
+"x-xx-x-xx-x-x-x",
+"x-xx-x-xx-x-x-x",
+"xxxxxxxxxxxxxxx"
+],
+"uududrrrlu"
+)

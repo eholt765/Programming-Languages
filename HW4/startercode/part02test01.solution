@@ -1,0 +1,16 @@
+maze
+[x,x,x,x,-,x,x,x,x,x,x]
+[x,-,-,-,-,-,-,-,-,x,x]
+[x,x,x,x,x,x,-,x,x,x,x]
+[x,x,-,-,-,-,-,-,-,x,x]
+[x,x,x,-,x,x,-,x,-,x,x]
+[x,-,-,-,x,x,-,x,-,-,x]
+[x,x,x,x,x,x,x,x,-,x,x]
+[x,x,x,x,x,x,x,x,-,x,x]
+[x,-,-,-,-,-,-,-,-,-,x]
+[x,x,x,x,-,x,x,x,x,x,x]
+[x,-,1,-,-,-,-,-,-,-,x]
+[x,x,x,x,x,x,x,x,x,x,x]
+paths
+[r,u,r,u,u,u,l,u]
+true

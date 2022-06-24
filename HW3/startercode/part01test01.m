@@ -1,0 +1,17 @@
+(
+[
+"xxxxxxxxxxxxxxx",
+"x-------------x",
+"xxxxxxxxxxx-xxx",
+"xxxxxxxxxxx-xxx",
+"x-------------x",
+"xxxxxxxxxx-xxxx",
+"xxxxxxxxxx-xxxx",
+"x-------------x",
+"--xxxxxxxxxxxxx",
+"x-----------1-x",
+"xxxxxxxxxx-xxxx",
+"xxxxxxxxxxxxxxx"
+],
+"rulld"
+)

@@ -1,0 +1,17 @@
+(
+[
+"xxxxxxxxxxx",
+"x-x-------x",
+"x---xxxxx-x",
+"x1x-xxxxx-x",
+"x-x-----x-x",
+"x-xxxxxxx-x",
+"x-xxxxxxxxx",
+"x----x----x",
+"xx-x---xxxx",
+"xxxxx-xxxxx",
+"x---------x",
+"xxxx-xxxxxx"
+],
+"dlduulduruur"
+)
